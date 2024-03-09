@@ -178,7 +178,7 @@
   /**
    * Testimonials slider
    */
-  new Swiper('.services-slider', {
+  new Swiper('.skills-slider', {
     speed: 600,
     loop: true,
     autoplay: {
