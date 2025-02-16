@@ -36,21 +36,38 @@
 
     <!-- Template Main CSS File -->
     <!-- <link href="assets/css/experience.css" rel="stylesheet" /> -->
-    <link href="./assets/css/42_abudhabi.css" rel="stylesheet" />
-    <style>
+    <link href="./assets/css/certificates.css" rel="stylesheet" />
+    <!-- <style>
       #journal img {
         width: 500px;
         height: 300px;
       }
 
-      .portfolio .portfolio-wrap img {
-        height: 300px;
-        width: 500px;
+      .video-container {
+        position: relative;
+        width: 100%;
+        height: 100vh; /* Full viewport height */
+        overflow: hidden;
       }
-      .carousel-inner img {
-        height: 100vh;
+
+      .video-overlay {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Ensures video covers the full area */
+        filter: brightness(50%); /* Adjust darkness */
       }
-    </style>
+
+      .video-container::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.3); /* Dark overlay */
+        pointer-events: none;
+      }
+    </style> -->
   </head>
 
   <body>
@@ -88,25 +105,18 @@
 
     <main id="main">
       <!-- ======= About Section ======= -->
-      <div
-        id="carouselExampleIndicators"
-        class="carousel slide"
-        data-bs-ride="carousel"
-        class="home"
-      >
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img
-              src="./assets/img/42-hero-bg-me.webp"
-              class="d-block w-100"
-              alt="42_abudhabi"
-            />
-          </div>
-        </div>
+      <div class="video-container">
+        <video class="video-overlay w-100" autoplay loop muted>
+          <source
+            src="https://videos.pexels.com/video-files/2792370/2792370-sd_640_360_30fps.mp4"
+            type="video/mp4"
+          />
+        </video>
       </div>
+
       <!-- End About Section -->
 
-      <div id="journal" class="text-left">
+      <div id="journal" class="text-left ">
         <div class="container pt-5">
           <div class="section-title text-center">
             <h2>Certificates</h2>
@@ -118,23 +128,21 @@
             <div class="row">
               <div class="col-lg-4 col-md-6">
                 <div class="journal-info">
-                  <a href="dhl-experience.html"
-                    ><img
+                  <a href="./projects/advent-of-cyber-2024.html">
+                    <img
                       src="./assets/img/certificates/advent_of_cyber_2024.png"
                       class="img-responsive"
                       alt="img"
-                  /></a>
-
+                    />
+                  </a>
                   <div class="journal-txt">
                     <h4>
-                      <a href="dhl-experience.html"
-                        >Advent Of Cyber 2024</a
-                      >
+                      <a href="./projects/advent-of-cyber-2024.html">Advent Of Cyber 2024</a>
                     </h4>
                     <p class="separator">
-                      An autobiography describing my experiences, challenges,
-                      and successes while working for one of the top logistics
-                      firms in the world.
+                      Hands-on cybersecurity challenges covering real-world
+                      attack scenarios, enhancing skills in threat detection and
+                      incident response.
                     </p>
                   </div>
                 </div>
@@ -142,24 +150,23 @@
 
               <div class="col-lg-4 col-md-6">
                 <div class="journal-info">
-                  <a href="emirates-experience.html"
-                    ><img
+                  <a href="./projects/yelp-camp.html">
+                    <img
                       src="./assets/img/certificates/The_Web_Developer_Bootcamp_2021.png"
                       class="img-responsive"
                       alt="img"
-                  /></a>
-
+                    />
+                  </a>
                   <div class="journal-txt">
                     <h4>
-                      <a href="emirates-experience.html"
+                      <a href="./projects/yelp-camp.html"
                         >The Web Developer Bootcamp 2021</a
                       >
                     </h4>
                     <p class="separator">
-                      Going into specifics about my work as a Junior Developer:
-                      I worked on creative projects at Emirates Engineering,
-                      adopted innovative technologies, and navigated through
-                      challenging software solutions.
+                      Comprehensive training in front-end and back-end
+                      development, covering JavaScript, HTML, CSS, Node.js, and
+                      modern frameworks.
                     </p>
                   </div>
                 </div>
@@ -167,24 +174,21 @@
 
               <div class="col-lg-4 col-md-6">
                 <div class="journal-info">
-                  <a href="42-experience.html"
-                    ><img
-                      src="./assets/img//certificates/introtocybersecurity101.svg"
+                  <a href="./projects/uni_ctf_2024_HTB.html">
+                    <img
+                      src="./assets/img//certificates/uni-ctf-2024.png"
                       class="img-responsive"
                       alt="img"
-                  /></a>
-
+                    />
+                  </a>
                   <div class="journal-txt">
                     <h4>
-                      <a href="42-experience.html"
-                        >Transformative Learning Journey at 42 Abu Dhabi</a
-                      >
+                      <a href="./projects/uni_ctf_2024_HTB.html">University CTF 2024 HTB</a>
                     </h4>
                     <p class="separator">
-                      Examining the innovative, project-based learning
-                      methodology at 42 Abu Dhabi, where obstacles turn into
-                      opportunities and boundaries are pushed to fulfill our
-                      aspirations for programming in a cooperative setting.
+                      Participated in a competitive Capture The Flag (CTF)
+                      event, solving cybersecurity challenges in cryptography,
+                      exploitation, and web security.
                     </p>
                   </div>
                 </div>
@@ -192,29 +196,47 @@
 
               <div class="col-lg-4 col-md-6">
                 <div class="journal-info">
-                  <a href="42-experience.html"
-                    ><img
+                  <a href="./projects/Web-Fundamentals-in-Cybersecurity.html">
+                    <img
                       src="./assets/img//certificates/webFundamentals.svg"
                       class="img-responsive"
                       alt="img"
-                  /></a>
-
+                    />
+                  </a>
                   <div class="journal-txt">
                     <h4>
-                      <a href="42-experience.html"
-                        >Transformative Learning Journey at 42 Abu Dhabi</a
+                      <a href="./projects/Web-Fundamentals-in-Cybersecurity.html"
+                        >Web Fundamentals in Cybersecurity</a
                       >
                     </h4>
                     <p class="separator">
-                      Examining the innovative, project-based learning
-                      methodology at 42 Abu Dhabi, where obstacles turn into
-                      opportunities and boundaries are pushed to fulfill our
-                      aspirations for programming in a cooperative setting.
+                      Explored web security concepts, including XSS, SQL
+                      injection, and secure coding practices to safeguard web
+                      applications.
                     </p>
                   </div>
                 </div>
               </div>
 
+              <div class="col-lg-4 col-md-6">
+                <div class="journal-info">
+                  <a href="./projects/cybersecurity101.html">
+                    <img
+                      src="./assets/img//certificates/introtocybersecurity101.svg"
+                      class="img-responsive"
+                      alt="img"
+                    />
+                  </a>
+                  <div class="journal-txt">
+                    <h4><a href="./projects/cybersecurity101.html">Cyber Security 101</a></h4>
+                    <p class="separator">
+                      Fundamental course covering cybersecurity principles, risk
+                      assessment, network security, and ethical hacking
+                      techniques.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
